@@ -25,6 +25,9 @@ describe('App landing page', () => {
 
     cy.url().should('include', '/dashboard')
 
-    cy.findByRole('heading', {  name: /there is nothing to show on this dashboard yet/i}).should('be.visible');
+    // Dashboard widgets are visible
+    cy.findByRole('heading', {  name: /Cases/i}).should('be.visible');
+    cy.findByRole('heading', {  name: /Revenue/i}).should('be.visible');
+    cy.findByRole('heading', {  name: /Market Share/i}).should('be.visible');
   })
 });
