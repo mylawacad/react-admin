@@ -5,6 +5,8 @@ To install:
 
 ```npm install```
 
+Rename the ```.env.example``` file to ```.env``` and set the variable to `REACT_APP_API_URL` to have value `"http://localhost:3000/api"`.
+
 To run:
 
 ```npm start```
